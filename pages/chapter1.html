@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一章：项目介绍 - 我的文档</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">我的文档</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🏠</span>
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter1.html" class="nav-link active">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">📖</span>
+                            第一章：项目介绍
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="#overview" class="nav-sub-link">项目概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#background" class="nav-sub-link">项目背景</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#solution" class="nav-sub-link">解决方案</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#features" class="nav-sub-link">主要特性</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#scenarios" class="nav-sub-link">使用场景</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter2.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">⚙️</span>
+                            第二章：技术栈
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#overview" class="nav-sub-link">技术栈概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#html5" class="nav-sub-link">HTML5</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#css3" class="nav-sub-link">CSS3</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#javascript" class="nav-sub-link">JavaScript</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#principles" class="nav-sub-link">设计原则</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter3.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🚀</span>
+                            第三章：部署指南
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#overview" class="nav-sub-link">部署概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#github-pages" class="nav-sub-link">GitHub Pages</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#netlify" class="nav-sub-link">Netlify</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#local-testing" class="nav-sub-link">本地测试</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#optimization" class="nav-sub-link">部署优化</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#troubleshooting" class="nav-sub-link">故障排除</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <div class="content-header">
+            <h1 class="page-title">第一章：项目介绍</h1>
+            <p class="page-subtitle">了解这个GitBook风格网站项目的背景和目标</p>
+        </div>
+        
+        <div class="content-body">
+            <div class="intro-section" id="overview">
+                <h2>项目概述</h2>
+                <p>这是一个模仿GitBook风格的静态文档网站项目，旨在为用户提供一个简洁、美观、易于维护的文档展示平台。项目采用纯前端技术栈，无需后端服务器，可以轻松部署到各种静态网站托管服务上。</p>
+            </div>
+
+            <div class="intro-section" id="background">
+                <h2>项目背景</h2>
+                <p>随着互联网的发展，越来越多的开发者、技术团队和个人需要展示他们的文档、教程和知识库。传统的文档管理方式往往存在以下问题：</p>
+                <ul>
+                    <li>界面不够美观，用户体验差</li>
+                    <li>缺乏响应式设计，在移动设备上显示效果不佳</li>
+                    <li>维护成本高，需要专业的技术人员</li>
+                    <li>部署复杂，需要服务器环境</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="solution">
+                <h2>解决方案</h2>
+                <p>本项目提供了一个完整的解决方案：</p>
+                <ul>
+                    <li><strong>美观的界面设计</strong> - 参考GitBook的设计风格，提供现代化的用户界面</li>
+                    <li><strong>响应式布局</strong> - 完美适配各种设备，从手机到桌面电脑</li>
+                    <li><strong>简单易维护</strong> - 使用HTML、CSS、JavaScript，无需复杂的技术栈</li>
+                    <li><strong>快速部署</strong> - 可以部署到GitHub Pages、Netlify等免费平台</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="features">
+                <h2>主要特性</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>美观设计</h3>
+                        <p>现代化的界面设计，清晰的层次结构</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>响应式布局</h3>
+                        <p>适配各种屏幕尺寸，移动端友好</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>快速加载</h3>
+                        <p>纯静态页面，加载速度快</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>易于维护</h3>
+                        <p>简单的文件结构，方便更新内容</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro-section" id="scenarios">
+                <h2>使用场景</h2>
+                <p>这个项目适用于以下场景：</p>
+                <ul>
+                    <li><strong>技术文档</strong> - 为开源项目编写技术文档</li>
+                    <li><strong>知识库</strong> - 建立个人或团队的知识库</li>
+                    <li><strong>教程网站</strong> - 创建在线教程和学习资源</li>
+                    <li><strong>产品文档</strong> - 为产品编写用户手册和API文档</li>
+                    <li><strong>博客系统</strong> - 作为技术博客的展示平台</li>
+                    <li><strong>项目展示</strong> - 展示个人或团队的项目作品</li>
+                </ul>
+            </div>
+
+            <div class="intro-section">
+                <h2>下一步</h2>
+                <p>在接下来的章节中，我们将详细介绍：</p>
+                <ol>
+                    <li><strong>技术栈详解</strong> - 深入了解使用的技术和框架</li>
+                    <li><strong>部署指南</strong> - 如何将网站部署到线上</li>
+                    <li><strong>自定义配置</strong> - 如何根据需求修改网站</li>
+                    <li><strong>最佳实践</strong> - 开发和使用的最佳实践</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- 移动端菜单按钮 -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

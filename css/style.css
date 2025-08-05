@@ -1,0 +1,507 @@
+/* GitBook风格静态网站样式 - 简洁优雅版本 */
+
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 全局样式 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 280px;
+    background-color: #fff;
+    border-right: 1px solid #e1e4e8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar-header {
+    padding: 24px 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.site-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #24292e;
+    margin: 0;
+}
+
+.sidebar-nav {
+    padding: 16px 0;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 20px;
+    color: #586069;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+}
+
+.nav-link-content {
+    display: flex;
+    align-items: center;
+}
+
+.nav-expand-icon {
+    font-size: 12px;
+    transition: transform 0.3s ease;
+    color: #959da5;
+}
+
+.nav-item.expanded .nav-expand-icon {
+    transform: rotate(90deg);
+}
+
+.nav-link:hover {
+    background-color: #f6f8fa;
+    color: #24292e;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: #f1f8ff;
+    color: #0366d6;
+    border-left-color: #0366d6;
+    font-weight: 500;
+}
+
+.nav-icon {
+    margin-right: 8px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+/* 子导航样式 */
+.nav-sub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.nav-item.expanded .nav-sub-list {
+    display: block;
+    max-height: 500px;
+}
+
+.nav-sub-item {
+    margin: 0;
+}
+
+.nav-sub-link {
+    display: block;
+    padding: 6px 20px 6px 48px;
+    color: #586069;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.nav-sub-link:hover {
+    background-color: #f6f8fa;
+    color: #24292e;
+    text-decoration: none;
+}
+
+.nav-sub-link.active {
+    background-color: #f1f8ff;
+    color: #0366d6;
+    border-left-color: #0366d6;
+    font-weight: 500;
+}
+
+/* 主内容区域 */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.content-header {
+    padding: 48px 40px 32px;
+    border-bottom: 1px solid #e1e4e8;
+    background-color: #fafbfc;
+    border-top: 3px solid #24292e;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 8px;
+}
+
+.page-subtitle {
+    font-size: 16px;
+    color: #586069;
+    margin: 0;
+}
+
+.content-body {
+    padding: 32px 40px;
+    max-width: 800px;
+}
+
+/* 介绍部分 */
+.intro-section {
+    margin-bottom: 48px;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 16px;
+}
+
+.intro-section p {
+    font-size: 16px;
+    color: #586069;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.intro-section ul, .intro-section ol {
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.intro-section li {
+    margin-bottom: 8px;
+    color: #586069;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 16px;
+    margin-top: 32px;
+}
+
+.intro-section h2:first-child {
+    margin-top: 0;
+}
+
+.intro-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+/* 特性网格 */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 24px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+    border-color: #0366d6;
+    box-shadow: 0 2px 8px rgba(3, 102, 214, 0.1);
+}
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    font-size: 14px;
+    color: #586069;
+    line-height: 1.5;
+}
+
+/* 快速开始部分 */
+.getting-started h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 24px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    background-color: #0366d6;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.step-content h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #24292e;
+    margin-bottom: 4px;
+}
+
+.step-content p {
+    font-size: 14px;
+    color: #586069;
+    line-height: 1.5;
+}
+
+/* 移动端菜单按钮 */
+.mobile-menu-btn {
+    display: none;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.mobile-menu-btn span {
+    width: 20px;
+    height: 2px;
+    background-color: #586069;
+    transition: all 0.3s ease;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .content-header {
+        padding: 32px 20px 24px;
+    }
+    
+    .content-body {
+        padding: 24px 20px;
+    }
+    
+    .page-title {
+        font-size: 24px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    /* 移动端子导航样式 */
+    .nav-sub-list {
+        display: block;
+        padding-left: 20px;
+    }
+    
+    .nav-sub-link {
+        padding: 4px 20px 4px 28px;
+        font-size: 12px;
+    }
+    
+    /* 移动端展开图标样式 */
+    .nav-expand-icon {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-header {
+        padding: 24px 16px 20px;
+    }
+    
+    .content-body {
+        padding: 20px 16px;
+    }
+    
+    .page-title {
+        font-size: 20px;
+    }
+    
+    .page-subtitle {
+        font-size: 14px;
+    }
+}
+
+/* 滚动条样式 */
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #d1d5da;
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #959da5;
+}
+
+/* 链接样式 */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 代码块样式 */
+pre {
+    background-color: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 16px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+code {
+    background-color: #f6f8fa;
+    color: #e36209;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+    color: #24292e;
+}
+
+/* 引用样式 */
+blockquote {
+    border-left: 4px solid #0366d6;
+    padding-left: 16px;
+    margin: 16px 0;
+    color: #586069;
+    font-style: italic;
+}
+
+/* 图片样式 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* 分隔线 */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #e1e4e8;
+    margin: 24px 0;
+} 
+} 

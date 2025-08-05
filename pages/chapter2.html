@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二章：技术栈 - 我的文档</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">我的文档</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🏠</span>
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter1.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">📖</span>
+                            第一章：项目介绍
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#overview" class="nav-sub-link">项目概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#background" class="nav-sub-link">项目背景</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#solution" class="nav-sub-link">解决方案</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#features" class="nav-sub-link">主要特性</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#scenarios" class="nav-sub-link">使用场景</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter2.html" class="nav-link active">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">⚙️</span>
+                            第二章：技术栈
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="#overview" class="nav-sub-link">技术栈概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#html5" class="nav-sub-link">HTML5</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#css3" class="nav-sub-link">CSS3</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#javascript" class="nav-sub-link">JavaScript</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#principles" class="nav-sub-link">设计原则</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter3.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🚀</span>
+                            第三章：部署指南
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#overview" class="nav-sub-link">部署概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#github-pages" class="nav-sub-link">GitHub Pages</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#netlify" class="nav-sub-link">Netlify</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#local-testing" class="nav-sub-link">本地测试</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#optimization" class="nav-sub-link">部署优化</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter3.html#troubleshooting" class="nav-sub-link">故障排除</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <div class="content-header">
+            <h1 class="page-title">第二章：技术栈详解</h1>
+            <p class="page-subtitle">深入了解项目使用的各种技术和框架</p>
+        </div>
+        
+        <div class="content-body">
+            <div class="intro-section" id="overview">
+                <h2>技术栈概述</h2>
+                <p>本项目采用现代化的前端技术栈，注重简单性、可维护性和用户体验。所有技术都是经过精心选择的，确保项目既易于学习又具有强大的功能。</p>
+            </div>
+
+            <div class="intro-section" id="html5">
+                <h2>HTML5</h2>
+                <p>HTML5是现代Web开发的基础，提供了丰富的语义化标签和API。</p>
+                
+                <h3>主要特性</h3>
+                <ul>
+                    <li><strong>语义化标签</strong> - 使用nav、header、footer等标签提高代码可读性</li>
+                    <li><strong>响应式图片</strong> - 支持不同设备的最佳图片显示</li>
+                    <li><strong>表单增强</strong> - 新的输入类型和验证功能</li>
+                    <li><strong>多媒体支持</strong> - 原生支持音频和视频</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="css3">
+                <h2>CSS3</h2>
+                <p>CSS3提供了强大的样式控制能力，包括布局、动画、响应式设计等功能。</p>
+                
+                <h3>核心特性</h3>
+                <ul>
+                    <li><strong>Flexbox布局</strong> - 灵活的盒模型布局</li>
+                    <li><strong>Grid布局</strong> - 二维网格布局系统</li>
+                    <li><strong>响应式设计</strong> - 媒体查询和弹性单位</li>
+                    <li><strong>动画效果</strong> - CSS动画和过渡</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="javascript">
+                <h2>JavaScript</h2>
+                <p>JavaScript是项目的交互核心，使用现代ES6+语法提供丰富的用户体验。</p>
+                
+                <h3>主要功能</h3>
+                <ul>
+                    <li><strong>DOM操作</strong> - 动态更新页面内容</li>
+                    <li><strong>事件处理</strong> - 响应用户交互</li>
+                    <li><strong>移动端菜单</strong> - 响应式导航功能</li>
+                    <li><strong>页面高亮</strong> - 自动高亮当前页面</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="principles">
+                <h2>设计原则</h2>
+                <p>项目遵循以下设计原则：</p>
+                <ul>
+                    <li><strong>简洁性</strong> - 避免复杂的技术栈，保持简单</li>
+                    <li><strong>可维护性</strong> - 清晰的代码结构和注释</li>
+                    <li><strong>性能优化</strong> - 快速加载和流畅体验</li>
+                    <li><strong>可访问性</strong> - 支持各种设备和用户</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 移动端菜单按钮 -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的文档</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">我的文档</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🏠</span>
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/chapter1.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">📖</span>
+                            第一章：项目介绍
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter1.html#overview" class="nav-sub-link">项目概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter1.html#background" class="nav-sub-link">项目背景</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter1.html#solution" class="nav-sub-link">解决方案</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter1.html#features" class="nav-sub-link">主要特性</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter1.html#scenarios" class="nav-sub-link">使用场景</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/chapter2.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">⚙️</span>
+                            第二章：技术栈
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter2.html#overview" class="nav-sub-link">技术栈概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter2.html#html5" class="nav-sub-link">HTML5</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter2.html#css3" class="nav-sub-link">CSS3</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter2.html#javascript" class="nav-sub-link">JavaScript</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter2.html#principles" class="nav-sub-link">设计原则</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="pages/chapter3.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🚀</span>
+                            第三章：部署指南
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#overview" class="nav-sub-link">部署概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#github-pages" class="nav-sub-link">GitHub Pages</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#netlify" class="nav-sub-link">Netlify</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#local-testing" class="nav-sub-link">本地测试</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#optimization" class="nav-sub-link">部署优化</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="pages/chapter3.html#troubleshooting" class="nav-sub-link">故障排除</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <div class="content-header">
+            <h1 class="page-title">欢迎来到我的文档</h1>
+            <p class="page-subtitle">一个简洁优雅的文档网站</p>
+        </div>
+        
+        <div class="content-body">
+            <div class="intro-section">
+                <h2>关于这个项目</h2>
+                <p>这是一个使用纯HTML和CSS构建的静态文档网站，设计简洁优雅，加载速度快，适合展示各种文档和教程。</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>响应式设计</h3>
+                    <p>完美适配各种设备，从手机到桌面电脑</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>快速加载</h3>
+                    <p>纯静态页面，无需服务器，加载速度极快</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>简洁优雅</h3>
+                    <p>类似GitBook的设计风格，界面美观</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>易于维护</h3>
+                    <p>简单的文件结构，方便更新内容</p>
+                </div>
+            </div>
+
+            <div class="getting-started">
+                <h2>快速开始</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>浏览文档</h4>
+                            <p>使用左侧导航浏览不同的章节内容</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>本地预览</h4>
+                            <p>直接在浏览器中打开HTML文件即可预览</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>部署上线</h4>
+                            <p>按照部署指南将网站发布到GitHub Pages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 移动端菜单按钮 -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

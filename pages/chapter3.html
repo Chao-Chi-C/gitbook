@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第三章：部署指南 - 我的文档</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 侧边栏 -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1 class="site-title">我的文档</h1>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🏠</span>
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter1.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">📖</span>
+                            第一章：项目介绍
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#overview" class="nav-sub-link">项目概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#background" class="nav-sub-link">项目背景</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#solution" class="nav-sub-link">解决方案</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#features" class="nav-sub-link">主要特性</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter1.html#scenarios" class="nav-sub-link">使用场景</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter2.html" class="nav-link">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">⚙️</span>
+                            第二章：技术栈
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#overview" class="nav-sub-link">技术栈概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#html5" class="nav-sub-link">HTML5</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#css3" class="nav-sub-link">CSS3</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#javascript" class="nav-sub-link">JavaScript</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="chapter2.html#principles" class="nav-sub-link">设计原则</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="chapter3.html" class="nav-link active">
+                        <div class="nav-link-content">
+                            <span class="nav-icon">🚀</span>
+                            第三章：部署指南
+                        </div>
+                        <span class="nav-expand-icon">▶</span>
+                    </a>
+                    <ul class="nav-sub-list">
+                        <li class="nav-sub-item">
+                            <a href="#overview" class="nav-sub-link">部署概述</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#github-pages" class="nav-sub-link">GitHub Pages</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#netlify" class="nav-sub-link">Netlify</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#local-testing" class="nav-sub-link">本地测试</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#optimization" class="nav-sub-link">部署优化</a>
+                        </li>
+                        <li class="nav-sub-item">
+                            <a href="#troubleshooting" class="nav-sub-link">故障排除</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <div class="content-header">
+            <h1 class="page-title">第三章：部署指南</h1>
+            <p class="page-subtitle">学会如何将你的网站部署到线上</p>
+        </div>
+        
+        <div class="content-body">
+            <div class="intro-section" id="overview">
+                <h2>部署概述</h2>
+                <p>部署是将你的网站从本地环境发布到互联网上的过程。本项目的静态特性使得部署变得非常简单，你有很多免费的选择。</p>
+            </div>
+
+            <div class="intro-section" id="github-pages">
+                <h2>GitHub Pages 部署</h2>
+                <p>GitHub Pages是最推荐的部署方式，它与Git版本控制完美集成，部署过程简单快捷。</p>
+                
+                <h3>步骤详解</h3>
+                <ol>
+                    <li><strong>准备GitHub账户</strong> - 注册GitHub账户并安装Git客户端</li>
+                    <li><strong>创建GitHub仓库</strong> - 创建新的公开仓库</li>
+                    <li><strong>上传代码</strong> - 将本地代码推送到GitHub</li>
+                    <li><strong>启用GitHub Pages</strong> - 在仓库设置中启用Pages功能</li>
+                </ol>
+            </div>
+
+            <div class="intro-section" id="netlify">
+                <h2>Netlify 部署</h2>
+                <p>Netlify是另一个优秀的静态网站托管平台，提供更多高级功能。</p>
+                
+                <h3>Netlify优势</h3>
+                <ul>
+                    <li><strong>自动部署</strong> - 连接Git仓库后自动部署</li>
+                    <li><strong>自定义域名</strong> - 支持绑定自己的域名</li>
+                    <li><strong>HTTPS</strong> - 自动提供SSL证书</li>
+                    <li><strong>CDN加速</strong> - 全球CDN网络</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="local-testing">
+                <h2>本地测试</h2>
+                <p>在部署之前，建议先在本地测试网站是否正常工作。</p>
+                
+                <h3>本地服务器设置</h3>
+                <p>有几种方式可以在本地运行网站：</p>
+                <ul>
+                    <li><strong>Python</strong> - 使用 <code>python -m http.server 8000</code></li>
+                    <li><strong>Node.js</strong> - 使用 <code>http-server -p 8000</code></li>
+                    <li><strong>VS Code</strong> - 使用Live Server插件</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="optimization">
+                <h2>部署优化</h2>
+                <p>为了获得最佳的用户体验，建议在部署前进行一些优化。</p>
+                
+                <h3>性能优化</h3>
+                <ul>
+                    <li><strong>压缩文件</strong> - 压缩CSS和JavaScript文件</li>
+                    <li><strong>优化图片</strong> - 使用WebP格式，压缩图片大小</li>
+                    <li><strong>启用缓存</strong> - 设置适当的缓存头</li>
+                    <li><strong>CDN加速</strong> - 使用CDN加载外部资源</li>
+                </ul>
+            </div>
+
+            <div class="intro-section" id="troubleshooting">
+                <h2>故障排除</h2>
+                <p>在部署过程中可能会遇到一些问题，这里提供一些解决方案。</p>
+                
+                <h3>常见问题</h3>
+                <ul>
+                    <li><strong>网站无法访问</strong> - 检查GitHub Pages是否已启用</li>
+                    <li><strong>样式显示异常</strong> - 检查CSS文件路径是否正确</li>
+                    <li><strong>移动端显示问题</strong> - 检查viewport meta标签</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 移动端菜单按钮 -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="../js/main.js"></script>
+</body>
+</html> 
